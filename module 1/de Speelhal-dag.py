@@ -1,6 +1,6 @@
-aantal_personen = 4
+aantal_personen = 1
 kosten_per_ticket = 7.42
-tijd_in_minuten = 45
+tijd_in_minuten = 10
 kosten_per_5_minuten = 0.41
 totale_kosten_tickets = aantal_personen * kosten_per_ticket
 aantal_blokken = tijd_in_minuten / 5
