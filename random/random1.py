@@ -1,5 +1,2 @@
-def even_or_odd(number):
-    if number % 2 == 0:
-        return "Even"
-    else:
-        return "Odd"
+amount = 7.5
+print(int(amount))
