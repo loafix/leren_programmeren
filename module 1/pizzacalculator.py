@@ -2,32 +2,19 @@ PRIJS_SMALL = 9.99
 PRIJS_MEDIUM = 14.99
 PRIJS_LARGE = 18.99
 
-print("Kies het formaat van de pizza:")
-print("1. Small")
-print("2. Medium")
-print("3. Large")
+AANTAL_SMALL = int(input("Hoeveel Small pizza's wil je bestellen? "))
+AANTAL_MEDIUM = int(input("Hoeveel Medium pizza's wil je bestellen? "))
+AANTAL_LARGE = int(input("Hoeveel Large pizza's wil je bestellen? "))
 
-keuze = int(input("Voer het nummer in van het gewenste formaat: "))
+TOTAAL_SMALL = AANTAL_SMALL * PRIJS_SMALL
+TOTAAL_MEDIUM = AANTAL_MEDIUM * PRIJS_MEDIUM
+TOTAAL_LARGE = AANTAL_LARGE * PRIJS_LARGE
 
-if keuze == 1:
-    formaat = "Small"
-    prijs = PRIJS_SMALL
-elif keuze == 2:
-    formaat = "Medium"
-    prijs = PRIJS_MEDIUM
-elif keuze == 3:
-    formaat = "Large"
-    prijs = PRIJS_LARGE
-else:
-    print("Ongeldige keuze. Kies 1, 2 of 3 voor Small, Medium of Large.")
-    exit()
+TOTAAL_PRIJS = TOTAAL_SMALL + TOTAAL_MEDIUM + TOTAAL_LARGE
 
-aantal = int(input(f"Hoeveel {formaat} pizza's wil je bestellen? "))
-
-totaal_prijs = aantal * prijs
-
-print("********** PIZZA BONNETJE **********")
-print(f"Aantal {formaat} pizza's: {aantal} - Prijs: ${totaal_prijs:.2f}")
+print(f"Aantal Small pizza's: {AANTAL_SMALL} - Prijs: ${TOTAAL_SMALL:.2f}")
+print(f"Aantal Medium pizza's: {AANTAL_MEDIUM} - Prijs: ${TOTAAL_MEDIUM:.2f}")
+print(f"Aantal Large pizza's: {AANTAL_LARGE} - Prijs: ${TOTAAL_LARGE:.2f}")
 print("------------------------------------")
-print(f"Totaalprijs: ${totaal_prijs:.2f}")
-print("************************************")
+print(f"Totaalprijs: ${TOTAAL_PRIJS:.2f}")
+
