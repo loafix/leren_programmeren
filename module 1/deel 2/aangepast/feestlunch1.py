@@ -16,10 +16,11 @@ te_betalen_bedrag = totale_kosten_zonder_korting - korting
 kosten_croissantjes /= 100
 kosten_stokbroden /= 100
 te_betalen_bedrag /= 100
+totale_kosten_zonder_korting /= 100
 
-print(f"Kosten croissantjes: {kosten_croissantjes} euro")
+print(f"Kosten croissantjes: {kosten_croissantjes}")
 print(f"Kosten stokbroden: {kosten_stokbroden} euro")
-print(f"Totale kosten zonder korting: {totale_kosten_zonder_korting} euro")
+print(f"Totale kosten zonder korting: {totale_kosten_zonder_korting} euros")
 print(f"Korting: {korting} euro")
 print(f"Te betalen bedrag: {te_betalen_bedrag} euro")
 print(f'De feestlunch kost je bij de bakker {te_betalen_bedrag} euro voor de {aantal_croissantjes} croissantjes en de {aantal_stokbroden} stokbroden als de {aantal_kortingsbonnen} kortingsbonnen nog geldig zijn!')
