@@ -1,4 +1,4 @@
-print("Denk aan een kaassoort uit: Emmenthaler, Leerdammer, Parmigiano Reggiano, Goudse Kaas, Blue de Rochbaron, Fouma d'Ambert, Camembert, Mozzarella.")
+print("Denk aan een kaassoort kies uit: Emmenthaler, Leerdammer, Parmigiano Reggiano, Goudse Kaas, Blue de Rochbaron, Fouma d'Ambert, Camembert, Mozzarella.")
 
 vraag = input("Is de kaas geel? (ja/nee): ").lower()
 if vraag == 'ja':
