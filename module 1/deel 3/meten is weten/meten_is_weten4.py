@@ -2,15 +2,18 @@ a = int(input("eerste gehele getal: "))
 b = int(input("tweede gehele getal: "))
 
 if a > b:
-    Max, Min = a, b
+    Max = b
     print(f'a is het grootste getal: {Max}')
 
 elif a < b:
-    Max, Min = b, a
-    print(f'b is het grootste getal: {Max}')
+    Min = b
+    print(f'b is het grootste getal: {Min}')
 
 else:
     print (f'a en b zijn gelijk')
 
-print(f'Het minimum is: {Min}')
-print(f'Het maximum is: {Max}')
+if Max is None:
+    Max = b
+else:
+    Min = b
+
